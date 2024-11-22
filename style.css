@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text for contrast */
+}
+
+.header {
+  position: relative;
+  text-align: center; /* Centers the "My Projects" header */
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.github-button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%); /* Vertically center the button */
+  padding: 10px 20px;
+  color: white;
+  background-color: #0077b5;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.github-button:hover {
+  background-color: #005f8a;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.3);
+}
+
+.project-card a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.project-card a:hover {
+  color: #0077b5;
+}
+
